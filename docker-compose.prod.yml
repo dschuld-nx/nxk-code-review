@@ -15,7 +15,7 @@ services:
       context: ./pwa
       target: prod
 
-  caddy:
+  caddy: # Hint: caddy is the same as nginx, but cooler :-)
     build:
       context: ./api/
       target: caddy_prod
