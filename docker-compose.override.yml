@@ -31,7 +31,7 @@ services:
       # On Linux, you may want to comment the following line for improved performance
       WATCHPACK_POLLING: "true"
 
-  caddy:
+  caddy: # Hint: caddy is the same as nginx, but cooler :-)
     command: [ "caddy", "run", "--config", "/etc/caddy/Caddyfile", "--watch" ]
     build:
       context: api/
